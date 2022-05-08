@@ -174,6 +174,31 @@ r1 = RouteProblem('Chromepet', 'Padappai', map=Mapping_locations)
 r2 = RouteProblem('Velachery', 'Poonamallee', map=Mapping_locations)
 r3 = RouteProblem('Sriperumabadur', 'Mudichur', map=Mapping_locations)
 r4 = RouteProblem('Enathur', 'Damal', map=Mapping_locations)
+print(r0)
+print(r1)
+print(r2)
+print(r3)
+print(r4)
+
+goal_state_path=breadth_first_search(r0)
+path_states(goal_state_path) 
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
+
+goal_state_path=breadth_first_search(r1)
+path_states(goal_state_path) 
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
+
+goal_state_path=breadth_first_search(r2)
+path_states(goal_state_path) 
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
+
+goal_state_path=breadth_first_search(r3)
+path_states(goal_state_path) 
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
 
 goal_state_path=breadth_first_search(r4)
 path_states(goal_state_path) 
@@ -183,9 +208,12 @@ print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
 ```
 
 ## OUTPUT:
-![image](https://user-images.githubusercontent.com/75235813/166146603-f4f11f20-0f09-4a82-94a5-cfafb5f3e929.png)
-
-
+![image](https://user-images.githubusercontent.com/75235813/167288076-c73d48b3-47aa-4220-bb2a-5e448f5e0cb8.png)
+![image](https://user-images.githubusercontent.com/75235813/167288083-d5829235-9faf-45dd-b726-68377d00833d.png)
+![image](https://user-images.githubusercontent.com/75235813/167288099-711918ae-28b3-48a0-bda2-813deb5aebc5.png)
+![image](https://user-images.githubusercontent.com/75235813/167288107-dcd2aa5b-4b09-4e67-97b0-7475c941f942.png)
+![image](https://user-images.githubusercontent.com/75235813/167288117-0d7c868f-3fc8-4319-a7fe-1749f638fe33.png)
+![image](https://user-images.githubusercontent.com/75235813/167288135-11e29bfe-bb57-43ae-8edc-606170a5baa6.png)
 
 ## SOLUTION JUSTIFICATION:
 Route follow the minimum distance between locations using breadth-first search. As BFS traverses the tree “shallowest node first”, it would always pick the shallower branch until it reaches the solution.
