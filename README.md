@@ -206,7 +206,6 @@ print("GoalStateWithPath:{0}".format(goal_state_path))
 print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
 
 ```
-
 ## OUTPUT:
 ![image](https://user-images.githubusercontent.com/75235813/167288076-c73d48b3-47aa-4220-bb2a-5e448f5e0cb8.png)
 ![image](https://user-images.githubusercontent.com/75235813/167288083-d5829235-9faf-45dd-b726-68377d00833d.png)
